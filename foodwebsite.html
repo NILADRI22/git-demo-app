@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Niladri Food Website</title>
+    <style>
+        body{
+    	margin:50px;
+        background-color: lawngreen;
+           }
+        #topnav{
+	              background:blue;
+	               margin:0px;
+	               padding:10px;
+	              text-align:left;
+	              border-radius:10px 10px 0px 0px;
+	              box-shadow:0px 0px 50px black;
+               }
+        #topnav li{
+	       display:inline;
+	       margin-left:25px;
+           }
+        #topnav li a{
+	       color:white;
+	       font-weight:bold;
+	       text-decoration:none;
+           }
+   
+       #topnav li a:hover{
+	       color:darkorange;
+           }
+           @keyframes banner{
+	        25%{background-image:url('food1.jpg');}
+	        50%{background-image:url('food.jpg');}
+	        75%{background-image:url('food2.jpg');}
+	        100%{background-image:url('food3.jpg');}
+           }
+       #changeimage{
+	           background-image:url('food1.jpg');
+	           height:400px;
+	           padding-top:30px;
+	           background-size:100%;
+	           background-position:center;
+               opacity: 1.0;
+	           animation:banner;
+	           animation-iteration-count:infinite;
+	           animation-duration:5s;
+            }
+            .infoblock{
+	          background-color:rgb(10, 200, 152);
+	          color:white;
+	          padding:10px;
+	          text-align:center;
+	          font-weight:bold;
+	          border-radius:0px 0px 10px 10px;
+	          box-shadow:0px 0px 20px white;
+             }
+             #booking{
+                 background-color: yellow;
+                 margin-top: 20px;
+                 float: right;
+             }
+             legend
+             {
+                 color: darkblue;
+                 font-size: 20px;
+                 font-weight: bold;
+             }
+             .abc{
+                   color: black;
+                   font-size: 20px;
+                   width: 100%;
+             }
+             input[type=text] {
+                width: 100%;
+                padding: 12px 20px;
+                margin: 8px 0;
+                box-sizing: border-box;
+                border: 2px solid red;
+                border-radius: 4px;
+                }
+                input[type=email] {
+                width: 100%;
+                padding: 12px 20px;
+                margin: 8px 0;
+                box-sizing: border-box;
+                border: 2px solid red;
+                border-radius: 4px;
+                }
+                input[type=submit] {
+                width: 100%;
+                padding: 12px 20px;
+                margin: 8px 0;
+                box-sizing: border-box;
+                background-color: red;
+                 color: white;
+                }
+                .welcome img{
+                    float: left;
+                    margin-top: 10px;
+                    height: 510px;
+                    width: 900px;
+                    margin-top: 30px;
+                    border-radius: 10px 10px 0px 0px;
+                    box-shadow:0px 0px 10px blue;
+                    margin-bottom: 50px;
+                
+                }
+                #menu p{
+                    font-size: 40px;
+                    font-weight: bold;
+                    font-style: italic;
+                    text-align: center;
+                    margin-right: 30%;
+                    margin-left: 25%;
+                    font-family: monospace;
+                    text-decoration: underline wavy blue;
+                    color:black;
+
+                }
+                .grid-container {
+                  display: grid;
+                  grid-template-columns:auto auto auto;
+                  grid-column-gap: 10px;
+                  padding: 10px;
+                  float: left;
+                  margin-bottom: 20px;
+                  background-image:linear-gradient(orange,white,darkgreen);
+	             text-align:center;
+	             border-radius:20px 20px 20px 20px;
+                  }  
+
+                .grid-item img {
+                   padding: 10px;
+                   width:380px;
+                   height: 200px;
+                   border-radius:50px 30px 30px 20px;
+                   position: relative;
+                  }
+                .footer p
+                {
+                    background-image:linear-gradient(PINK,lightblue,lightgreen);
+                    margin-top: 750px;
+	                text-align:center;
+                    height: 200px;
+	                border-radius:20px 20px 20px 20px;
+                    font-size:20px;
+                    font-weight: bold;
+                    padding-top: 20px;
+                    padding-bottom: 10px;
+                    color:red;
+                }
+            
+   
+    </style>
+</head>
+<body>
+    <ul id="topnav">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">Product list</a></li>
+        <li><a href="#">Register</a></li>
+        <li><a href="#">Login</a></li>
+    </ul>
+    <div id="changeimage">
+
+    </div>
+   <div class="infoblock">
+       EAT FOOD AT LOW COST
+   </div>
+  
+       <fieldset id="booking">
+           
+           <legend>BOOK A TABLE</legend>
+           <div class="abc">
+           <label for="fname">First name:</label>
+           <input type="text" id="fname" name="fname"><br><br>
+           <label for="lname">Last name:</label>
+           <input type="text" id="lname" name="lname"><br><br>
+           <label for="email">Email:</label>
+           <input type="email" id="email" name="email"><br><br>
+           <label for="phone">Phone No:</label>
+           <input type="text" id="phone" name="phone"><br><br>
+           <input type="submit" value="BOOK">
+           </div>
+       </fieldset>
+    <div class="welcome">
+          <img src="food3.jpg">
+    </div><br><br>
+    <div id="menu">
+        <p>OUR SPECIAL MENUS</p>
+    </div>
+    <div class="grid-container">
+        <div class="grid-item"><img src="food.jpg"></div>
+        <div class="grid-item"><img src="food1.jpg"></div>
+        <div class="grid-item"><img src="food2.jpg"></div>  
+        <div class="grid-item"><img src="food3.jpg"></div>
+        <div class="grid-item"><img src="food5.jpg"></div>
+        <div class="grid-item"><img src="food1.jpg"></div>  
+        <div class="grid-item"><img src="food2.jpg"></div>
+        <div class="grid-item"><img src="food6.jpg"></div>
+        <div class="grid-item"><img src="food.jpg"></div>  
+      </div>
+      <div class="footer">
+        <p>Opening Hours<br>
+            Monday: Closed<br>
+            Tue-Wed : 9:Am - 10PM<br>
+            Thu-Fri : 9:Am - 10PM<br>
+            Sat-Sun : 5:PM - 10PM<br><br><br>
+            THANKS FOR VISITING US
+        </p>
+
+   </div>
+   
+</body>
+</html>
